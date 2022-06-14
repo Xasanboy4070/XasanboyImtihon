@@ -1,0 +1,145 @@
+:root {
+  --main-bg-color: #d95550;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Lobster;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4c9195;
+}
+.pomodoro {
+  width: 800px;
+  height: 600px;
+  padding: 1%;
+  background-color: #fff8ee;
+  margin-top: 70px;
+  position: relative;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo_title {
+  color: var(--main-bg-color);
+  margin: 0 20px;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.btn {
+  width: 120px;
+  height: 40px;
+  border-radius: 50px;
+  color: var(--main-bg-color);
+  background: none;
+  margin: 0 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.active {
+  background-color: var(--main-bg-color);
+  color: white;
+}
+.time_box {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.time {
+  width: 245px;
+  height: 245px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.time_title {
+  color: var(--main-bg-color);
+  font-size: 38px;
+  font-weight: 400;
+}
+.btn_start_stop {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.btnS {
+  width: 120px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--main-bg-color);
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 45px;
+  cursor: pointer;
+}
+.btn_pause {
+  display: none;
+}
+.timer {
+  width: 245px;
+  height: 245px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  position: absolute;
+  top: 175px;
+  left: 275px;
+}
+.boxs {
+  width: 120px;
+  height: 120px;
+  /* border: 1px solid red; */
+  position: relative;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+.boxs:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 210px;
+  height: 210px;
+  border: 15px solid;
+  border-color: var(--main-bg-color) var(--main-bg-color) #cab98e #cab98e;
+  border-radius: 50%;
+}
+
+.box1::after {
+  transform: rotate(290deg);
+}
+.box2 {
+  transform: rotate(90deg);
+}
+.box2::after {
+  transform: rotate(290deg);
+}
+.box3 {
+  transform: rotate(270deg);
+}
+.box3::after {
+  transform: rotate(290deg);
+}
+.box4 {
+  transform: rotate(180deg);
+}
+.box4::after {
+  transform: rotate(290deg);
+}
