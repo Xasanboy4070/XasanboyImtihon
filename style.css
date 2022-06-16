@@ -123,23 +123,27 @@ body {
 }
 
 .box1::after {
-  transform: rotate(290deg);
+  transform: var(--rotate, rotate(315deg));
+  transition: 0.9s;
 }
 .box2 {
   transform: rotate(90deg);
 }
 .box2::after {
-  transform: rotate(290deg);
+  transform: var(--rotate, rotate(315deg));
+  transition: 0.9s;
 }
 .box3 {
   transform: rotate(270deg);
 }
 .box3::after {
-  transform: rotate(290deg);
+  transform: var(--rotate, rotate(315deg));
+  transition: 0.9s;
 }
 .box4 {
   transform: rotate(180deg);
 }
 .box4::after {
-  transform: rotate(290deg);
+  transform: var(--rotate, rotate(315deg));
+  transition: 0.9s;
 }
